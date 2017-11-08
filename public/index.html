@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Byorns - React CRUD Example with Router and Bootstrap">
+
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=BioRhyme" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="%PUBLIC_URL%/byorns.css" />
+
+  <title>Byorn's Menu And Search Table Example</title>
+</head>
+
+<body class="page-background">
+
+
+  <div class="container-fluid">
+
+    <!-- Header -->
+    <div class="row header">
+      <div class="col-md-12 col-lg-12">
+        <h1 class="logo">Byorn's</h1>
+        <h3> <a href="http://www.byorns.com"> Code samples and Demo's </a> </h3>
+      </div>
+    </div>
+
+
+
+    <div class="row">
+        <h2 class="margin-left-15">React JS - Reusable Table Component</h2><hr/>
+    </div>
+
+   <div class="row">
+     <div class="col-md-10 col-lg-10">
+     <div id="root" ></div>
+     </div>
+   </div>
+   <div class="row">
+     <div class="col-md-10 col-lg-10"><h4>API Usage: </h4></div>
+   </div>
+   <div class="row">
+     <div class="col-md-10 col-lg-10">
+
+       <xmp>
+         this.rowDetails = [ {"id":1,"title":"Jack and the Bean Stark", "description":"story about giants"},
+                 {"id":3,"title":"Snow White And Seven Dwarfs", "description":"story about dwarfs"},
+                 {"id":2,"title":"Rapunzel", "description":"story about hair"},
+                 {"id":5,"title":"Goldilocks", "description":"story about bears"}
+
+         ];
+
+         this.config = {
+           sortableColumns:['id','title','description'],
+           columnNames:{'id':'ID','title':'Title','description':'Description'}
+         }
+       </xmp>
+          <xmp>
+        <HackTable details={this.rowDetails} onEdit={this.onEdit} config={this.config}/>
+      </xmp>
+    </div>
+   </div>
+   <div class="row">
+     <div class="col-md-10 col-lg-10"> <h4>Get the source code from <a href="#">here </a></h4></div>
+   </div>
+
+
+   <div class="row">
+     <div class="more-verticle-space" ></div>
+   </div>
+
+
+
+
+    <!-- Footer -->
+    <div class="row footer text-center">
+      <div class="col-md-12 col-lg-12">
+        <p> Contact: byorn.desilva@gmail.com
+          <p>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+</body>
+
+</html>
