@@ -1,6 +1,6 @@
 {
   "name": "table-component",
-  "homepage":"http://www.byorns.com/react-reusable-table",
+  "homepage":"http://www.byorns.com/table-component",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
